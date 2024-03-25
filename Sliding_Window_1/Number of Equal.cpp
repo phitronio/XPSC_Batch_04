@@ -1,7 +1,3 @@
-/**
-* author: mj_riffu
-* created: 2024-03-14 23:17:39
-**/
 #include <bits/stdc++.h>
 using namespace std;
 

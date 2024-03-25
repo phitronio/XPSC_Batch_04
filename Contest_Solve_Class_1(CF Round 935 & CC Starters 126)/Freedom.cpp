@@ -21,7 +21,7 @@ int main() {
         for (int j = n - 1;j >= 1;j--) {
             cnt[a[j]]--;
             int need = (a[j] * 2);
-            for (int i = 2;i <= 7;i++) {
+            for (int i = 2;i <= 10;i++) {
                 int x, y;
                 x = i + a[j];
                 y = i * a[j];
