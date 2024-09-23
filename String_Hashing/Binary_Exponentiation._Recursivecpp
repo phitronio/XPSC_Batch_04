@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+const int MOD = 1e9 + 7;
+
+int power(long long x, long long n, int MOD) {
+   if (n == 0) {
+      return 1;
+   }
+   int curr = power(x, n / 2, MOD);
+   if (n % 2 == 0) {
+      return 1LL * curr * curr % MOD;
+   }
+   else {
+      return 1LL * curr * curr % MOD * x % MOD;
+   }
+}
+
+int main() {
+   ios::sync_with_stdio(false);
+   cin.tie(0);
+
+   int t;
+   cin >> t;
+   while (t--) {
+      int x, n;
+      cin >> x >> n;
+      cout << power(x, n, MOD) << '\n';
+   }
+   return 0;
+}
